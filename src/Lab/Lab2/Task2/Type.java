@@ -8,5 +8,5 @@ public enum Type {
     CITY,
     BMX
 
-
+//testLab1Lab2
 }
