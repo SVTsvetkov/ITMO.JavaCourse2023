@@ -4,11 +4,10 @@ package Lab.Lab5.Task3;
 public class Task53 {
     public static void main(String[] args) {
         String s = "метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]»";
-        replace(s);
+        replace(s,"«бяка»", "[вырезано цензурой]");
     }
-
-    public static void replace(String s) {
-        String replaced = s.replaceAll("«бяка»", "[вырезано цензурой]");
+    public static void replace(String s, String strToFind, String strToReplace) {
+        String replaced = s.replaceAll(strToFind, strToReplace);
         System.out.println(replaced);
     }
 }
